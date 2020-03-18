@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>This is the title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <hr>
+    {% include 'snippets/header.html' %}
+  </head>
+  <body>
+    <style type="text/css">
+      .main{
+        min-height: 100vh;
+        height: 100%;
+      }
+    </style>
+    <div class="main">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    {% include 'snippets/footer.html' %}
+
+  </body>
+</html>
